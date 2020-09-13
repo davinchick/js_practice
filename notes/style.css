@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("fon.jpg");
+    background-size: cover;
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+ul, li {
+    list-style: none;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 3rem;
+}
+
+h6 {
+    font-size: 2rem;
+}
+
+.notes_container {
+    margin: 20px auto;
+    background-color: #6e3e29b5;
+    width: 350px;
+    height: 400px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 1px 1px 2px #aeaca6, -1px -1px 2px #aeaca6;
+}
+
+.addnote{
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background-color: #fff;
+    color: #51504b;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.5rem 2rem;
+    transition: all 0.5s ease;
+}
+.addnote:hover{
+    background-color: #b9b9b9;
+}
+.tools {
+    display: flex;
+    flex-direction: row;
+    background-color: #bcbfc0;
+    border: 1px dashed grey;
+    padding: 0.5rem;
+}
+
+#edit, #delete {
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 1rem;
+    padding:0.5rem;
+    border : none;
+    cursor: pointer;
+    outline: none;
+    margin-right: 1rem;
+}
+#edit{
+    background: url("edit.png") no-repeat;
+    background-size: contain;
+}
+#delete{
+    background: url("trash.jpg") no-repeat;
+    background-size: contain;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    display: none;
+    font-size: 1.5rem;
+    background-color: #6e3e29b5;
+}
+.main.showen{
+    display: block;
+}
+.textarea {
+    box-sizing: border-box;
+    border: none;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-family: inherit;
+    font-size: 1.2rem;
+}
+.textarea.showen{
+    display: none;
+}
