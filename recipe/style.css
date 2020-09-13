@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("fon.jpg");
+    background-size: cover;
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ul, li {
+    list-style: none;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 3rem;
+}
+
+h6 {
+    font-size: 2rem;
+}
+
+.container {
+    padding: 1rem;
+    margin: 6rem auto 0;
+    width: 600px;
+    border: 3px solid #bbbbbb;
+    background-color: white;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header input {
+    border: none;
+    background-color: #efefef;
+    border-radius:3px;
+    padding: 0.5rem 1rem;
+    outline: none;
+}
+header button {
+    padding: 0.5rem 1rem;
+    border: none;
+    font-size: 1rem;
+    background-color: #f8f8f8;
+    border-radius:3px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+header button:hover {
+    outline: 1px solid grey;
+}
+
+.favorites {
+    padding: 1rem;
+    text-align: center;
+    background-color: beige;
+}
+.favorites-list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+}
+.favorites-list li {
+    position: relative;
+    width: 80px;
+    cursor: pointer;
+}
+.favorites-list li span {
+    font-size: 0.9rem;
+    display: inline-block;
+    overflow: hidden;
+    width: 75px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.favorites-list li span:hover {
+    white-space: normal;
+}
+.favorites-list img{
+    object-fit: cover;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    box-shadow: 0 0 10px 2px #3333331a;
+}
+
+.meals {
+
+}
+.meal {
+    box-shadow: 0 0 10px 2px #3333331a;
+    border-radius: 3px;
+    margin: 1rem;
+    overflow: hidden;
+}
+.meal-header {
+    position: relative;
+}
+.meal-header img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.meal h4{
+    font-size: 2rem;
+    margin: 0;
+}
+.random{
+    position: absolute;
+    top: 10px;
+    background-color: beige;
+    padding: 0.2rem 0.5rem;
+    border-top-right-radius:3px;
+    border-bottom-right-radius:3px;
+}
+.meal-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.heart {
+    background: url('heart.png') no-repeat center center;
+    background-size: contain;
+    padding: 1rem 2rem;
+    outline: none;
+    cursor: pointer;
+}
+.heart.active{
+    background: url('heart1.png') no-repeat center center;
+    background-size: contain;
+}
+
+.remove-fav, #close-info {
+    font-size: 1.5rem;
+    background-color: #000000b8;
+    color: #f0f8ff9c;
+    font-weight: bold;
+    border: 2px solid #2b1f1f;
+    border-radius: 50%;
+    padding: 0px 5px;
+    position: absolute;
+    font-family: monospace;
+    top: 0;
+    right: 1px;
+    outline: none;
+    text-shadow: 1px 1px 2px #ab9813, -1px -1px 2px #ab9813;
+    cursor: pointer;
+}
+
+
+
+.info-container{
+    position: fixed;
+    background-color: rgba(43, 31, 31, 0.76);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info-container.hide{
+    display: none;
+}
+.meal-info {
+    background-color: #bbbbbb;
+    position: relative;
+    max-width: 500px;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    width: 100%;
+}
+.meal-info h1{
+    text-align: center;
+}
+.meal-info p{
+    max-height: 150px;
+    overflow-y: scroll;
+}
+.meal-info ul li { list-style: initial;}
