@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #7d4e5b;
+    color: #fff;
+}
+
+.container {
+    background-color: #3c2530;
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.header {
+    padding: 1rem;
+}
+.body {
+    padding: 1rem;
+}
+.pw {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    background-color: #7d4e5b;
+    position: relative;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+.copy {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    transform: translate(0, 50%);
+    background-color: #414861;
+    padding: 0.25rem 0.5rem;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.pw:hover .copy{
+    opacity: 1;
+}
+
+.formControl {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+}
+#generate {
+    display: block;
+    width: 100%;
+    background-color: rgb(245 221 148 / 82%);
+    font-weight: bold;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin-top: 1rem;
+}
